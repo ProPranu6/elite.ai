@@ -332,7 +332,7 @@ def produce_ensembled_summary(summ_dict, sentence_count=1, original_sens=None):
     try: 
       summary_indices.append(sen_indices[sen])
     except Exception as e:
-      print("An error spotted :\n\t", e)
+      print("An error spotted :\n\t", "Key : ", e, " Not Found.")
     n += 1
   summary_indices = sorted(summary_indices)
   ensembled_summary = ""
