@@ -1,0 +1,10 @@
+requests
+bs4
+html5lib
+tensorflow==2.0
+tensorflow_hub
+bert-for-tf2
+sentencepiece
+sentence-transformers
+transformers
+sumy
