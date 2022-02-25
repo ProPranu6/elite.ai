@@ -329,7 +329,10 @@ def produce_ensembled_summary(summ_dict, sentence_count=1, original_sens=None):
   for sen in sen_freq_inorder.keys():
     if n > sentence_count:
       break
-    summary_indices.append(sen_indices[sen])
+    try: 
+      summary_indices.append(sen_indices[sen])
+    except Exception as e:
+      print("An error spotted :\n\t", e)
     n += 1
   summary_indices = sorted(summary_indices)
   ensembled_summary = ""
